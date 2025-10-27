@@ -9,6 +9,8 @@ import Contact from './components/Contact';
 import Blog from './components/Blog';
 import BookNow from './components/BookNow';
 import SkinAndThreading from './components/SkinAndThreading';
+import Facials from './components/Facials';
+import Bleach from './components/Bleach';
 import NailServices from './components/NailServices';
 import MP from './components/MP';
 import LuxuryExtensions from './components/LuxuryExtensions';

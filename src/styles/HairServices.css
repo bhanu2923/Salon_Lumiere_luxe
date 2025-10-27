@@ -1,0 +1,43 @@
+/* Adjust spacing between components */
+.hair-services-container > * + * {
+  margin-top: 40px; /* Increased spacing between sections */
+  position: relative;
+  z-index: 1;
+}
+
+/* Ensure the first component has proper spacing from the top */
+.hair-services-container > :first-child {
+  margin-top: 0;
+  padding-bottom: 0; /* Removed extra padding from first component */
+}
+
+/* Specific spacing for hair extensions section */
+.hair-extensions-section {
+  margin-top: 60px !important;
+  padding: 10px 0;
+  margin-bottom: -130px !important;
+}
+
+/* Spacing for hair care section */
+.hair-care-section {
+  margin-top: 10px !important;
+  padding: 10px 0;
+}
+
+/* Reduce internal spacing for both sections */
+.hair-extensions-section .service-details,
+.hair-care-section .service-details {
+  padding: 10px 0;
+}
+
+.hair-extensions-section .service-heading,
+.hair-care-section .service-heading {
+  margin: 10px 0;
+}
+
+/* Reduce spacing between HairCare and Footer */
+.hair-services-container + footer {
+  margin-top: -100px; /* Pull the footer up closer to the content */
+  position: relative;
+  z-index: 2;
+}

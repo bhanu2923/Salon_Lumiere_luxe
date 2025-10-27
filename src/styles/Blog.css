@@ -1,0 +1,287 @@
+/* Blog Page Styles */
+.blog-page {
+  font-family: 'Arial', sans-serif;
+  color: #5a4a42; /* Warm brown for better readability */
+  line-height: 1.6;
+}
+
+/* Hero Section */
+.blog-hero {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(255, 255, 255, 0.2)), 
+  url('https://thumbs.dreamstime.com/b/beauty-salon-interior-light-design-luxury-cosmetic-service-shop-generative-ai-inside-studio-spa-room-clean-empty-trendy-283223268.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 80px 20px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.blog-hero h1 {
+  font-size: 3.5rem;
+  margin-bottom: 15px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #fff;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+  text-transform: uppercase;
+}
+
+.blog-hero p {
+  font-size: 1.3rem;
+  max-width: 700px;
+  margin: 0 auto;
+  color: #f0e6e1; /* Soft beige for better contrast */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  font-weight: 300;
+  letter-spacing: 0.5px;
+}
+
+/* Wellness Section */
+.wellness-section {
+  padding: 30px 0 50px;
+  background-color: #f9f9f9;
+}
+
+.wellness-content {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.wellness-image {
+  flex: 1;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.wellness-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.wellness-image img:hover {
+  transform: scale(1.02);
+}
+
+.wellness-text {
+  flex: 1;
+  padding: 20px 0;
+}
+
+.wellness-text h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.3rem;
+  color: #906b3a;
+  margin-bottom: 20px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
+
+.wellness-text p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #555;
+  margin-bottom: 25px;
+}
+
+.wellness-features {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.wellness-features li {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 15px;
+  font-size: 1.05rem;
+  color: #444;
+}
+
+.wellness-features li:before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: #d4a76a;
+  font-weight: bold;
+}
+
+.cta-button {
+  background-color: #906b3a;
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  font-size: 1rem;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.cta-button:hover {
+  background-color: #906b3a;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(144, 74, 49, 0.3);
+  color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .wellness-content {
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .wellness-text {
+    text-align: center;
+  }
+  
+  .wellness-features {
+    text-align: left;
+    display: inline-block;
+  }
+}
+
+/* Blog Grid */
+.blog-container {
+  padding: 0 20px 80px;
+}
+
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Blog Card */
+.blog-card {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.blog-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.blog-image {
+  position: relative;
+  height: 220px;
+  overflow: hidden;
+}
+
+.blog-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.blog-card:hover .blog-image img {
+  transform: scale(1.05);
+}
+
+.blog-category {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: #906B3A;
+  color: white;
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.blog-content {
+  padding: 25px;
+}
+
+.blog-date {
+  color: #906B3A;
+  font-size: 0.85rem;
+  font-weight: 500;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.blog-content h3 {
+  font-size: 1.4rem;
+  margin: 0 0 15px;
+  color: #2C2521;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.blog-content p {
+  color: #666;
+  margin-bottom: 20px;
+  line-height: 1.7;
+}
+
+.read-more {
+  color: #906B3A;
+  text-decoration: none;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  transition: color 0.3s ease;
+}
+
+.read-more span {
+  margin-left: 5px;
+  transition: transform 0.3s ease;
+}
+
+.read-more:hover {
+  color: #7a5a2e;
+}
+
+.read-more:hover span {
+  transform: translateX(5px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .blog-hero {
+    padding: 70px 20px;
+  }
+  
+  .blog-hero h1 {
+    font-size: 2.2rem;
+  }
+  
+  .blog-grid {
+    grid-template-columns: 1fr;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  .blog-image {
+    height: 250px;
+  }
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}

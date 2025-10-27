@@ -1,0 +1,183 @@
+.extensions-container {
+  background-color: #fff;
+  padding: 80px 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.extensions-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.text-content {
+  flex: 1;
+  max-width: 600px;
+}
+
+.text-content h2 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 20px;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+
+.description {
+  color: #666;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.features {
+  margin: 30px 0;
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  color: #333;
+  font-size: 1rem;
+}
+
+.checkmark {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background-color: #f8f1e9;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 25px;
+  margin-right: 15px;
+  color: #d4a76a;
+  font-weight: bold;
+}
+
+.book-now-btn {
+  background-color: #000;
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 20px;
+}
+
+.book-now-btn:hover {
+  background-color: #333;
+}
+
+.images-content {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 40px;
+}
+
+.image-stack {
+  display: flex;
+  gap: 15px;
+  width: 100%;
+  max-width: 600px;
+}
+
+.extension-img {
+  flex: 1;
+  width: 100%;
+  height: 300px;
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Individual image styles if needed */
+.img-1, .img-2, .img-3 {
+  position: relative;
+  width: 100%;
+  height: 300px;
+}
+
+/* Make the Hair Extensions heading smaller */
+.service-details h2.service-heading {
+  font-size: 2.2rem; 
+  font-weight: 500; 
+  font-family: 'Playfair Display', serif;
+}
+.service-details {
+
+  max-width: 100%;
+  width: 400px;
+  margin: 0 auto;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.service-description {
+  font-size: 1.0rem;
+  font-weight: 350;
+  font-family: 'inter', sans-serif;
+  margin: 0 auto 25px auto;
+  padding: 0 10px;
+  max-width: 900px;
+  line-height: 1.7;
+  letter-spacing: 0.2px;
+  color: #604a31;
+  text-align: center;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+
+/* Responsive styles */
+@media (max-width: 992px) {
+  .extensions-content {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  
+  .text-content {
+    max-width: 100%;
+    margin-top: 40px;
+  }
+  
+  .features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .feature {
+    width: 45%;
+    margin-bottom: 10px;
+  }
+  
+  .images-content {
+    width: 100%;
+    height: 400px;
+  }
+}
+
+@media (max-width: 576px) {
+  .feature {
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .images-content {
+    height: 300px;
+  }
+  
+  .img-3 {
+    bottom: 20px;
+    right: 20px;
+  }
+}

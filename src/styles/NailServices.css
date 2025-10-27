@@ -1,0 +1,33 @@
+/* Nail Services Container */
+.nail-services-container {
+  display: flex;
+  flex-direction: column;
+  gap: 45px; /* Further reduced gap between all components */
+}
+
+/* Reduce bottom padding of NailCare component */
+.nail-care-content {
+  padding-bottom: 10px !important;
+  margin-bottom: -10px !important;
+}
+
+/* Reduce spacing around NailArt component */
+.nailart-content {
+  padding-top: 10px !important;
+  margin-top: -10px !important;
+  padding-bottom: 5px !important;
+  margin-bottom: -15px !important;
+}
+
+/* Adjust MP component spacing */
+.mp-content {
+  padding-top: 5px !important;
+  padding-bottom: 10px !important;
+  margin-bottom: -20px !important;
+}
+
+/* Reduce top padding of LuxuryExtensions component */
+.le-content {
+  padding-top: 0 !important;
+  margin-top: 20px !important;
+}

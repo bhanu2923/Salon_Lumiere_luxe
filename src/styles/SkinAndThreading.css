@@ -1,0 +1,36 @@
+.skin-and-threading-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0px; /* Further reduced gap between Skin and Threading */
+  padding: 10px 0;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* Remove any extra margins or paddings that might cause double spacing */
+.skin-and-threading-container > * {
+  margin: 0;
+  padding: 0;
+}
+
+/* Ensure all components take full width */
+.skin-page,
+.threading-page,
+.bleach-page,
+.facials-page {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Adjust spacing between components */
+.bleach-page {
+  margin-top: -70px !important;
+}
+
+/* Reduce top margin and add bottom margin to the facials component */
+.facials-page {
+  margin-top: -70px !important;
+  margin-bottom: -40px !important;
+}
